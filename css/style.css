@@ -164,7 +164,6 @@ form,
 
 
 #section1 article {
-    margin-top: 25px;
     align-items: center;
     display: flex;
 }
@@ -421,13 +420,39 @@ aside {
         flex-direction: column;
     }
 
+    header > a,
+    header > nav {
+        margin: auto;
+    }
+
     header > nav > ul {
         gap: 20px;
+    }
+
+    nav a:hover {
+        border-top: none;
+    }
+
+    nav li:hover {
+        border-bottom: 1px solid var(--red);
+        padding-bottom: 10px;
+        transition: all 0.2s ;
+        
+    }
+    
+    nav li {
+        border-bottom: 1px solid var(--lightgrey);
+        padding-bottom: 10px;
+        border-top: none;
     }
 
     #section1 article {
         flex-wrap: wrap;
         gap: 10px;
+    }
+
+    #section1 article a:nth-last-child(-n+2){
+        
     }
 
     #section2 { 
